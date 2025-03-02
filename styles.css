@@ -1,0 +1,230 @@
+* /*General purpose*/
+{
+    align-items: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Logo Image*/
+#logo {
+    width: 100%;
+    text-align: center;
+}
+
+#logo img 
+{
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) 
+{
+    #logo img 
+    {
+        max-width: 80%;
+    }
+}
+
+
+
+/*Navbar*/
+#navbar 
+{
+    background-color: #1D3557;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#navbar nav a 
+{
+    font-size: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#navbar nav a:hover 
+{
+    background-color: #F1C40F;
+    color: #1D3557;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) 
+{
+    #navbar nav 
+    {
+        display: block;
+    }
+
+    #navbar nav a 
+    {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+        padding: 12px 0;
+    }
+}
+
+
+
+/*Footer*/
+footer {
+    background-color: #333333; 
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+footer hr {
+    border: 1px solid #444444;
+    margin: 10px 0;
+}
+
+footer h2 {
+    color: #AED6F1;
+    margin-bottom: 10px;
+}
+
+footer p,
+footer address {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+/*Homepage*/
+main
+{
+    background-color: #F0F0F0;
+}
+
+
+#about, #store, #contact 
+{
+    background-color: #F8F8F8;
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#about header h1, #store h1, #contact h1 
+{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #1D3557;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#about p, #store p, #contact p 
+{
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333333;
+    text-align: justify;
+    max-width: 900px;
+    margin: 0 auto 15px auto;
+}
+
+#store ul 
+{
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#store ul li 
+{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#contact form 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact form label 
+{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#contact input[type="email"], #contact input[type="text"], #contact textarea 
+{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    max-width: 500px;
+}
+
+#contact button 
+{
+    padding: 10px 20px;
+    background-color: #1D3557;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#contact button:hover 
+{
+    background-color: #457b9d;
+}
+
+#contact #response 
+{
+    margin-top: 15px;
+    text-align: center;
+}
+
+@media (max-width: 768px) 
+{
+    #about, #store, #contact 
+    {
+        padding: 30px 15px;
+    }
+
+    #about header h1, #store h1, #contact h1 
+    {
+        font-size: 2em;
+    }
+
+    #about p, #store p, #contact p 
+    {
+        font-size: 16px;
+    }
+
+    #contact input[type="email"], #contact input[type="text"], #contact textarea 
+    {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    #contact button 
+    {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
